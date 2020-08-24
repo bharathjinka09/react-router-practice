@@ -8,20 +8,20 @@ import Topics from "./Topics";
 export default function App() {
   return (
     <div className="container">
-      <h1 className='text-center mb-2'>React Router Examples</h1>
+      <h1 className="text-center mb-2">React Router Examples</h1>
       <h2>1st Example: Basic Routing</h2>
       <Router>
         <div>
           <nav>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/react-router-practice">Home</Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/react-router-practice/about">About</Link>
               </li>
               <li>
-                <Link to="/users">Users</Link>
+                <Link to="/react-router-practice/users">Users</Link>
               </li>
             </ul>
           </nav>
@@ -29,13 +29,13 @@ export default function App() {
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
           <Switch>
-            <Route path="/about">
+            <Route path="/react-router-practice/about">
               <About />
             </Route>
-            <Route path="/users">
+            <Route path="/react-router-practice/users">
               <Users />
             </Route>
-            <Route path="/">
+            <Route path="/react-router-practice">
               <Home />
             </Route>
           </Switch>
@@ -46,24 +46,24 @@ export default function App() {
         <div>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/react-router-practice">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/react-router-practice/about">About</Link>
             </li>
             <li>
-              <Link to="/topics">Topics</Link>
+              <Link to="/react-router-practice/topics">Topics</Link>
             </li>
           </ul>
 
           <Switch>
-            <Route path="/about">
+            <Route path="/react-router-practice/about">
               <About />
             </Route>
-            <Route path="/topics">
+            <Route path="/react-router-practice/topics">
               <Topics />
             </Route>
-            <Route path="/">
+            <Route path="/react-router-practice">
               <Home />
             </Route>
           </Switch>
